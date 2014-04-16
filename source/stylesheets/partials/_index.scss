@@ -1,0 +1,12 @@
+ul.posts {
+
+  li.post {
+    border-bottom: 1px solid $light-gray;
+    padding: .75em 0;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+}
+
