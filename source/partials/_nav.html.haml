@@ -1,7 +1,9 @@
 %nav
   %section
-    = link_to "Home", "index.html", :class => "blog-title"
+    %ul.pull-left
+      %li
+        = link_to "My Blog", "index.html", :class => "blog-title"
 
-    %ul
+    %ul.pull-right
       %li
         = link_to "About", "about.html"

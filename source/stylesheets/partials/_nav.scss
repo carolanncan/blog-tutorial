@@ -1,0 +1,11 @@
+nav {
+  @include clearfix;
+  border-bottom: 1px solid $base-border-color;
+  margin: em(30) 0;
+
+  ul {
+    display: inline-block;
+    margin-right: em(20);
+    margin-bottom: em(10);
+  }
+}
