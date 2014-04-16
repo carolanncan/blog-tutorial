@@ -1,0 +1,18 @@
+footer {
+  border-top: 1px solid $base-border-color;
+  margin: em(30) 0;
+}
+
+ol {
+  @include span-columns(4 of 12);
+  margin-top: em(30);
+
+  h2 {
+    font-size: em(21);
+    padding-bottom: .5em;
+  }
+
+  li {
+    margin: .3em 0;
+  }
+}
