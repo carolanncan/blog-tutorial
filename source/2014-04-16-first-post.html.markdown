@@ -4,9 +4,8 @@ date: 2014-04-16
 tags: example
 ---
 
-Now you are ready to type in anything you like! You can use markdown or regular html (no haml) in this file.
-
-To celebrate successfully creating our first blog post, let's add a congratulatory image.
+#My First Post
+Now you are ready to type in anything you like! You can use markdown or regular html (no haml) in this file. To celebrate successfully creating our first blog post, let's add a congratulatory image.
 
 <figure>
 
@@ -15,9 +14,9 @@ To celebrate successfully creating our first blog post, let's add a congratulato
   </div>
 
   <figcaption>
-  Mission accomplished
+  Arrested Development, Mission accomplished
   </figcaption>
 
 </figure>
 
-Mission accomplished.
+Now you've added your first post, your first image, and your own styles!

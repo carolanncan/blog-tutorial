@@ -1,0 +1,24 @@
+figure {
+  margin: 2em 0;
+  width: 80%;
+
+  .image {
+    border-radius: 3px;
+    box-shadow: 0 8px 7px -5px darken($light-gray, 2);
+    margin: .5em 0;
+    overflow: hidden;
+
+    img {
+      @include fill-parent;
+      display: block;
+    }
+  }
+
+  figcaption {
+    color: darken($light-gray, 10);
+    font-size: 1.2em;
+    font-style: italic;
+    margin-top: 1em;
+    // text-align: center;
+  }
+}
