@@ -6,6 +6,7 @@ gem 'middleman-blog', '~> 3.5.2'
 gem "bitters"
 gem "neat"
 gem 'bourbon'
+gem 'haml'
 
 # For feed.xml.builder
 gem 'builder', '~> 3.0'
