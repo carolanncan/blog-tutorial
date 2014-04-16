@@ -13,14 +13,7 @@
 
 
   %body
-    = partial "partials/nav"
     #main{:role => "main"}
+      = partial "partials/nav"
       = yield
-    %aside
-      %h2 Recent Articles
-      %ol
-        - blog.articles[0...10].each do |article|
-          %li
-            = link_to article.title, article
-            %span= article.date.strftime('%b %e')
       = partial "partials/footer"
