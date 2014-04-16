@@ -9,6 +9,7 @@ gem "neat"
 gem 'bourbon'
 gem 'haml'
 gem 'html2haml'
+gem 'nokogiri'
 
 # For feed.xml.builder
 gem 'builder', '~> 3.0'
