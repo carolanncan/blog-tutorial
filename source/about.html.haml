@@ -2,10 +2,9 @@
 layout: layout
 ---
 
-%h1
-  About My Demo Blog
 %h2
-  Ingredients
+  About My Blog
+
 %ul.accordion-menus
   %li
     %a.js-accordion-trigger{href: "#"} Middleman
@@ -13,7 +12,7 @@ layout: layout
       %p
         Middleman is a command-line tool for creating static websites using
         all the shortcuts and tools of the modern web development environment.
-      %a{href: "http://middlemanapp.com/"} Middlemanapp.com
+      %a{href: "http://middlemanapp.com/"} Middleman
   %li
     %a.js-accordion-trigger{href: "#"} Bourbon
     .submenu
@@ -28,7 +27,7 @@ layout: layout
         Neat is a semantic grid framework built on top of Sass and Bourbon.
         It is simple enough to get you up and running in minutes, and powerful enough
         to handle any responsive layout you can dream of.
-      %a{href: "http://middlemanapp.com/"} Middlemanapp.com
+      %a{href: "http://middlemanapp.com/"} Neat
   %li
     %a.js-accordion-trigger{href: "#"} Bitters
     .submenu
@@ -45,4 +44,4 @@ layout: layout
         Bourbon, Bitters, and Neat.
       %a{href: "http://thoughtbot.github.io/refills/#"} Refills
 
-= javascript_include_tag 'accordian'
+= javascript_include_tag 'accordion'
