@@ -5,6 +5,7 @@ tags: example
 ---
 
 #My First Post
+
 Now you are ready to type in anything you like! You can use markdown or regular html (no haml) in this file. To celebrate successfully creating our first blog post, let's add a congratulatory image.
 
 <figure>
