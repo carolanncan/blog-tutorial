@@ -1,19 +1,28 @@
 footer {
   border-top: 1px solid $base-border-color;
-  margin: em(30) 0;
-  height: 200px;
+  margin: 2em 0;
+  padding-top: 2em;
+
+  .heading {
+    font-size: .9em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
 }
 
-ol {
-  @include span-columns(4 of 12);
-  margin-top: em(30);
+footer.posts {
+  font-size: .85em;
 
-  h2 {
-    font-size: em(21);
-    padding-bottom: .5em;
+  a, h2 {
+    color: lighten($dark-gray, 40);
   }
 
-  li {
-    margin: .3em 0;
+  a, h1 {
+    font-weight: 700;
+  }
+
+  h2 {
+    font-weight: 500;
   }
 }

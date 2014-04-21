@@ -1,35 +1,28 @@
-ul.posts {
-
-  li.post {
-    border-bottom: 1px solid $light-gray;
-    padding: .75em 0;
-
-    &:last-of-type {
-      border-bottom: none;
-    }
-  }
-}
-
-.post-wrap {
-  @include transition(all .2s linear);
+.post-heading {
+  margin-bottom: 1em;
 
   h1 {
-    display: inline-block;
-    font-size: 2em;
-    font-weight: 500;
+    font-size: 1.6em;
+  }
+
+  h2 {
+    color: lighten($blue, 25);
+    font-size: 1.2em;
   }
 }
 
 .post-summary {
-
   h1 {
     display: none;
-    font-size: 1.2em;
   }
 
   p {
-    font-size: 1.21em;
-    line-height: 1.4em;
+    font-size: 1em;
+    line-height: $base-line-height * 1.1;
+  }
+
+  a {
+    color: $dark-gray;
   }
 
   .image {

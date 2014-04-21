@@ -1,8 +1,8 @@
 ---
 layout: posts
-title: Writing My Own Blog
-subtitle: I never thought it could be so cool.
-date: 2014-04-16
+title: A Brand New Post
+subtitle: Blogging All Things
+date: 2014-04-20
 tags: code
 ---
 
@@ -17,7 +17,7 @@ Now you are ready to type in anything you like! You can use markdown or regular 
   </div>
 
   <figcaption>
-  Arrested Development, Mission accomplished
+    Our mission is accomplished.
   </figcaption>
 
 </figure>

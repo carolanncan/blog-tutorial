@@ -1,20 +1,19 @@
-p {
-  font-size: 1.21em;
-  line-height: 1.4em;
+section {
+  margin: 2em 0;
 }
 
-h5 {
+p {
+  font-size: 1.1em;
+  line-height: $base-line-height * 1.25;
+  margin-bottom: 1.5em;
 }
 
 figure {
-  margin: 2em 0;
-  width: 80%;
+  margin: 2em 0 1em;
+  width: 100%;
 
   .image {
-    border-radius: 3px;
-    box-shadow: 0 8px 7px -5px darken($light-gray, 2);
     margin: .5em 0;
-    overflow: hidden;
 
     img {
       @include fill-parent;
@@ -23,10 +22,8 @@ figure {
   }
 
   figcaption {
-    color: darken($light-gray, 10);
-    font-size: 1.2em;
-    font-style: italic;
+    color: darken($light-gray, 30);
+    font-size: .9em;
     margin-top: 1em;
-    // text-align: center;
   }
 }

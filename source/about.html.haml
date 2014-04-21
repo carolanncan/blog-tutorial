@@ -1,5 +1,5 @@
 ---
-layout: layout
+layout: main
 ---
 
 %h2
@@ -43,5 +43,8 @@ layout: layout
         Refills are prepackaged patterns and compontents, built ontop of
         Bourbon, Bitters, and Neat.
       %a{href: "http://refills.bourbon.io"} Refills
+
+- content_for :footer_main do
+  = partial 'partials/footer_main'
 
 = javascript_include_tag 'accordion'
