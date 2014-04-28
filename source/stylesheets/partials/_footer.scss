@@ -1,7 +1,9 @@
 footer {
+  @include outer-container;
   border-top: 1px solid $base-border-color;
-  margin: 2em 0;
+  margin-top: 2em;
   padding-top: 2em;
+  min-height: 200px;
 
   .heading {
     font-size: .9em;

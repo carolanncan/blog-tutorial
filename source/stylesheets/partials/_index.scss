@@ -1,3 +1,33 @@
+ul.posts {
+  border-top: none;
+  li.post {
+  }
+}
+
+.post-image {
+  @include span-columns(6 of 12);
+  @include omega(2n);
+  @include grayscale(90%);
+  display: block;
+  margin-left: 1em;
+  max-height: 200px;
+  opacity: .7;
+  overflow: hidden;
+  position: relative;
+
+  &:hover {
+    @include grayscale(0%);
+
+    &:before {
+      @include position(absolute, 0px 0px 0px 0px);
+      background-color: $mint-green;
+      content: '';
+      opacity: .7;
+      display: block;
+    }
+  }
+}
+
 .post-heading {
   margin-bottom: 1em;
 
@@ -6,7 +36,7 @@
   }
 
   h2 {
-    color: lighten($blue, 25);
+    color: lighten($base-accent-color, 25);
     font-size: 1.2em;
   }
 }

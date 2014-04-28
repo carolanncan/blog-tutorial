@@ -3,6 +3,7 @@ layout: posts
 title: Writing My Own Blog
 subtitle: I never thought it could be so cool.
 date: 2014-04-16
+image: otto.jpg
 tags: code
 ---
 
@@ -13,7 +14,7 @@ Now you are ready to type in anything you like! You can use markdown or regular 
 <figure>
 
   <div class="image">
-  <img src="http://goo.gl/KAXA3" alt="arrested development mission accomplished">
+  <img />{:src => "images/#{article.data.image}"}
   </div>
 
   <figcaption>

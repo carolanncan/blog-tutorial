@@ -4,6 +4,7 @@ title: Mixing 3D Printers and Mass-produced Products
 subtitle: Using Printed Parts to Hack Other Products
 date: 2012-01-01
 tags: 3D printing, hacks
+image: papers.jpg
 featured: true
 ---
 

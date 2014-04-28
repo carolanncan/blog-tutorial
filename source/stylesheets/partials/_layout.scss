@@ -1,4 +1,8 @@
-#main {
+body, html {
+  background-color: $light-green;
+}
+
+main {
   @include outer-container;
 }
 

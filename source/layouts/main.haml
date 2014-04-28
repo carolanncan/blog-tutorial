@@ -12,9 +12,9 @@
     = javascript_include_tag  "all"
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
 
-  %body
-    #main{:role => "main"}
-      = partial("partials/nav")
-      = yield
-      - if content_for?(:footer_main)
-        = yield_content :footer_main
+%body
+  %main{:role => "main"}
+    = partial("partials/nav")
+    = yield
+  - if content_for?(:footer_main)
+    = yield_content :footer_main
