@@ -1,8 +1,10 @@
 ul.posts {
-  border-top: none;
+
   li.post {
     @include span-columns(6 of 12);
     @include omega(2n);
+    height: 350px;
+    margin-bottom: 0;
   }
 }
 
@@ -36,6 +38,10 @@ ul.posts {
 
     &:before {
       background-color: rgba(black, .8);
+    }
+
+    .post-heading {
+       color: white;
     }
   }
 }
