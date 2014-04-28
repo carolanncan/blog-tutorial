@@ -1,10 +1,11 @@
 // Typography
 ///////////////////////////////////////////////////////////////////////////////
-$sans-serif: 'Oxygen', $helvetica;
-$serif: $georgia;
+$sans-serif: 'Muli', $helvetica;
+$serif: 'Radley', $georgia;
+$sans-bold: 'Montserrat' $helvetica;
 
 $base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
+$header-font-family: $sans-bold;
 
 // Sizes
 ///////////////////////////////////////////////////////////////////////////////
