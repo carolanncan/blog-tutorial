@@ -1,18 +1,88 @@
-nav {
-  @include clearfix;
-  border-bottom: 1px solid $base-border-color;
-  margin: em(30) 0;
+$sliding-menu-border-color: $black;
+$sliding-menu-background: $light-yellow;
+$sliding-menu-color: $black;
+$sliding-menu-border: 1px solid $sliding-menu-border-color;
+$sliding-menu-background-hover: $base-accent-color;
+$sliding-menu-color-hover: $light-yellow;
 
-  ul {
+nav {
+  margin-bottom: 7em;
+  position: relative;
+}
+
+.sliding-menu-button {
+  @include position(fixed, 21px 30px 0 0);
+  cursor: pointer;
+  float: right;
+  margin-bottom: $base-line-height;
+  outline: none;
+  z-index: 8;
+
+  &:after {
     display: inline-block;
-    margin-bottom: em(10);
+    content: '\f107';
+    font-family: $icon;
+  }
+
+  &.is-visible {
+    &:after {
+      content: '\f106';
+    }
   }
 }
 
-.blog-title {
-  font-size: 1.4em;
-  font-weight: 700;
-  letter-spacing: 4px;
-  text-transform: uppercase;
+.sliding-menu-content {
+  -webkit-overflow-scrolling: touch;
+  @include position(fixed, 0px 0px 0 0);
+  @include size(100% auto);
+  @include transform(translateY(-310px));
+  @include transition(all .3s linear);
+  background: $light-green;
+  z-index: 7;
 
+  li {
+    display: block;
+    font-weight: bold;
+    padding: 1em;
+    text-align: center;
+
+    a {
+      border-bottom: 1px solid transparent;
+    }
+
+    &:hover {
+      a {
+        @include transition(all .4s linear);
+        border-color: $black;
+      }
+    }
+
+    .blog-title {
+      font-family: $header-font-family;
+      font-size: 1.4em;
+      letter-spacing: 3px;
+      padding-top: .5em;
+      text-transform: uppercase;
+    }
+  }
+
+  &.is-visible {
+    @include transform(translateX(0));
+    background: $sliding-menu-background;
+  }
+}
+
+.menu-screen {
+  @include position(fixed, 0px 0px 0px 0px);
+  @include transition;
+  background: $sliding-menu-border-color;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 6;
+
+  &.is-visible {
+    opacity: .4;
+    visibility: visible;
+
+  }
 }

@@ -1,9 +1,19 @@
-%nav
-  %section
-    %ul.pull-left
-      %li
-        = link_to "Blog Title", "index.html", :class => "blog-title"
+%button.js-menu-trigger.sliding-menu-button{type: "button"}
+  Menu
 
-    %ul.pull-right
+%nav
+  .js-menu.sliding-menu-content
+    %ul
       %li
-        = link_to "About", "about.html"
+        = link_to "Oklahoma", "#"
+      %li
+        = link_to "Dallas", "#"
+      %li
+        = link_to "East Bay", "#"
+      %li
+        = link_to "San Francisco", "#"
+      %li
+        = link_to "Sacramento", "#"
+      %li
+        = link_to "My Type", "index.html", :class => "blog-title"
+  .js-menu-screen.menu-screen

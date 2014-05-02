@@ -37,7 +37,7 @@ ul.posts {
     @include grayscale(90%);
 
     &:before {
-      background-color: rgba(black, .8);
+      background-color: rgba($black, .8);
     }
 
     .post-heading {
@@ -63,7 +63,7 @@ ul.posts {
 
   h5 {
     margin-bottom: 1em;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $black;
     padding-bottom: 1em;
     display: inline-block;
 

@@ -7,3 +7,9 @@
   filter: url(grayscale.svg#greyscale);
   filter: gray;
 }
+
+@mixin flat-button($color, $width, $height) {
+  background: $color;
+  color: $black;
+  
+}

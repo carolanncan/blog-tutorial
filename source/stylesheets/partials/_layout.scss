@@ -6,6 +6,10 @@ main {
   @include outer-container;
 }
 
+section {
+  clear: both;
+}
+
 .large-col {
   @include span-columns(8 of 12);
 }

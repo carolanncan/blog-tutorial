@@ -3,6 +3,7 @@
 $sans-serif: 'Muli', $helvetica;
 $serif: 'Radley', $georgia;
 $sans-bold: 'Montserrat' $helvetica;
+$icon: 'FontAwesome';
 
 $base-font-family: $sans-serif;
 $header-font-family: $sans-bold;
@@ -16,6 +17,7 @@ $base-border-radius: em(3);
 // Colors
 ///////////////////////////////////////////////////////////////////////////////
 
+$black: #09191B;
 $blue: #477DCA;
 $dark-gray: #333;
 $medium-gray: #999;
@@ -23,6 +25,7 @@ $light-gray: #DDD;
 $light-red: #FBE3E4;
 
 $light-green: #CDEED4;
+$bright-green: #1C541D;
 $light-yellow: #EDE9C9;
 $mint-green: #B3E6CC;
 
@@ -30,8 +33,8 @@ $mint-green: #B3E6CC;
 $base-body-color: $light-yellow;
 
 //  Font Colors
-$base-font-color: black;
-$base-accent-color: black;
+$base-font-color: $black;
+$base-accent-color: $black;
 
 //  Text Link Colors
 $base-link-color: $base-accent-color;
