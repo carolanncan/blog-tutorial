@@ -14,17 +14,9 @@ footer {
 }
 
 footer.posts {
-  font-size: .85em;
-
-  a, h2 {
-    color: lighten($dark-gray, 40);
-  }
-
-  a, h1 {
-    font-weight: 700;
-  }
-
-  h2 {
-    font-weight: 500;
+  ul {
+    li {
+      font-size: .5em;
+    }
   }
 }

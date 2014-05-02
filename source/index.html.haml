@@ -14,16 +14,18 @@ per_page: 10
     %p= link_to 'Previous page', prev_page
 
 %ul.posts
-  - page_articles.each_with_index do |article, i|
+  - blog.articles[0...4].each do |article|
     = link_to article do
       %li.post
         .post-image
           %img{:src => "images/#{article.data.image}"}
         .post-heading
-          %h5
+          %h5.date
             = link_to article.date.strftime('%b %e'), article
           %h1
             = link_to article.title, article
+          %h5.location
+            = link_to article.data.location, article
 
 - if paginate
   - if next_page

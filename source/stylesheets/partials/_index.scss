@@ -57,16 +57,22 @@ ul.posts {
   z-index: 2;
 
   h1 {
+    padding: .3em 0;
     font-size: 1.2em;
     text-transform: uppercase;
   }
 
   h5 {
-    margin-bottom: 1em;
-    border-bottom: 1px solid $black;
-    padding-bottom: 1em;
+    padding: 1em 0;
     display: inline-block;
 
+    &.date {
+      border-bottom: 1px solid $black;
+    }
+
+    &.location {
+      border-top: 1px solid $black;
+    }
   }
 }
 
