@@ -20,17 +20,3 @@
         - blog.tags.each do |tag, articles|
           %li
             = link_to "#{tag}", tag_path(tag)
-    %li
-      %ol
-        -# - blog.locations.each do |location, article|
-          %li
-            -# = link_to article.data.location, article
-            -# = link_to "#{location}", location_path(location)
-    %li
-      - locations = blog.articles.group_by {|a| a.metadata[:page]['location'] }
-      %h2 Locations
-      %ol
-        - locations.each do |location, articles|
-          %li
-            = link_to location, tag_path(location)
-            (#{articles.size})

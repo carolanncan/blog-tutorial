@@ -4,16 +4,11 @@
 %nav
   .js-menu.sliding-menu-content
     %ul
-      %li
-        = link_to "Oklahoma", "#"
-      %li
-        = link_to "Dallas", "#"
-      %li
-        = link_to "East Bay", "#"
-      %li
-        = link_to "San Francisco", "#"
-      %li
-        = link_to "Sacramento", "#"
-      %li
-        = link_to "My Type", "/index.html", :class => "blog-title"
+      - locations = blog.articles.group_by {|a| a.metadata[:page]['location'] }
+      %ol
+        - locations.each do |location, articles|
+          %li
+            = link_to location, tag_path(location)
+        %li
+          = link_to "My Type", "/index.html", :class => "blog-title"
   .js-menu-screen.menu-screen
