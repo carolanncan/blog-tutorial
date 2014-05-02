@@ -1,9 +1,10 @@
 ---
 layout: posts
-title: Writing My Own Blog
-subtitle: I never thought it could be so cool.
-date: 2014-04-16
-image: otto.jpg
+title: A Brand New Post
+subtitle: Blogging All Things
+date: 2014-04-20
+image: silence.jpg
+location: oakland
 tags: code
 ---
 
@@ -14,11 +15,11 @@ Now you are ready to type in anything you like! You can use markdown or regular 
 <figure>
 
   <div class="image">
-  <img />{:src => "images/#{article.data.image}"}
+  <img src="http://goo.gl/KAXA3" alt="arrested development mission accomplished">
   </div>
 
   <figcaption>
-  Arrested Development, Mission accomplished
+    Our mission is accomplished.
   </figcaption>
 
 </figure>

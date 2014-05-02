@@ -5,17 +5,25 @@
 activate :blog do |blog|
   blog.permalink = "{year}/{month}/{day}/{title}.html"
   # Matcher for blog source files
-  # blog.sources = "{year}-{month}-{day}-{title}.html"
+  blog.sources = "posts/{year}-{month}-{day}-{title}.html"
   blog.taglink = "tags/{tag}.html"
+  # blog.location = "location/{location}.html"
   blog.layout = "main"
   blog.summary_separator = /(READMORE)/
-  # blog.summary_length = 250
+  blog.summary_length = 150
+  blog.custom_collections = {
+    location: {
+      link: 'locations/{location}.html',
+      template: 'location.html'
+    }
+  }
   # blog.year_link = "{year}.html"
   # blog.month_link = "{year}/{month}.html"
   # blog.day_link = "{year}/{month}/{day}.html"
   # blog.default_extension = ".markdown"
 
   blog.tag_template = "tag.html"
+  # blog.location_template = "location.html"
   #blog.calendar_template = "calendar.html"
 
   # Enable pagination
