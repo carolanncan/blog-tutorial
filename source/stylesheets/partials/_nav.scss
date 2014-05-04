@@ -1,9 +1,5 @@
 $sliding-menu-border-color: $black;
 $sliding-menu-background: $light-yellow;
-$sliding-menu-color: $black;
-$sliding-menu-border: 1px solid $sliding-menu-border-color;
-$sliding-menu-background-hover: $base-accent-color;
-$sliding-menu-color-hover: $light-yellow;
 
 nav {
   margin-bottom: 7em;
@@ -35,14 +31,16 @@ nav {
   -webkit-overflow-scrolling: touch;
   @include position(fixed, 0px 0px 0 0);
   @include size(100% auto);
-  @include transform(translateY(-310px));
+  @include transform(translateY(-180px));
   @include transition(all .3s linear);
   background: $light-green;
   z-index: 7;
 
   li {
+    @include transition(all .15s linear);
     display: block;
     font-weight: bold;
+    margin: 0;
     padding: 1em;
     text-align: center;
 
@@ -51,19 +49,20 @@ nav {
     }
 
     &:hover {
+      background: lighten($light-yellow, 7);
+
       a {
         @include transition(all .4s linear);
         border-color: $black;
       }
     }
+  }
 
-    .blog-title {
-      font-family: $header-font-family;
-      font-size: 1.4em;
-      letter-spacing: 3px;
-      padding-top: .5em;
-      text-transform: uppercase;
-    }
+  li.blog-title {
+    font-family: $header-font-family;
+    font-size: 1.4em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
   }
 
   &.is-visible {

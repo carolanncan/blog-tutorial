@@ -4,7 +4,7 @@ title: Letter Slot
 subtitle: On a door
 date: 2012-01-01
 image: papers.jpg
-location: sacramento
+location: Sacramento
 tags: 3D printing, hacks
 ---
 

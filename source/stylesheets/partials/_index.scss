@@ -5,6 +5,16 @@ ul.posts {
     @include omega(2n);
     height: 350px;
     margin-bottom: 0;
+
+    &:hover {
+      .post-image {
+        @include grayscale(90%);
+
+        &:before {
+          background-color: rgba($black, .8);
+        }
+      }
+    }
   }
 }
 
@@ -32,23 +42,11 @@ ul.posts {
     opacity: .7;
     display: block;
   }
-
-  &:hover {
-    @include grayscale(90%);
-
-    &:before {
-      background-color: rgba($black, .8);
-    }
-
-    .post-heading {
-       color: white;
-    }
-  }
 }
 
 .post-heading {
   @include position(relative, -200px 0 0 0);
-  color: lighten($base-accent-color, 25);
+  color: $black;
   font-weight: 700;
   margin-bottom: 1em;
   margin: 0 auto;
@@ -59,6 +57,7 @@ ul.posts {
   h1 {
     padding: .3em 0;
     font-size: 1.2em;
+    letter-spacing: 2px;
     text-transform: uppercase;
   }
 

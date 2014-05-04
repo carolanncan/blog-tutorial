@@ -4,8 +4,8 @@ title: A Brand New Post
 subtitle: Blogging All Things
 date: 2014-04-20
 image: silence.jpg
-location: oakland
-tags: code
+location: Oakland
+tags: handlettering, street art
 ---
 
 #My First Post

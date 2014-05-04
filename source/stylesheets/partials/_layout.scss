@@ -1,5 +1,5 @@
 body, html {
-  background-color: $light-green;
+  background-color: $mint-green;
 }
 
 main {
@@ -10,17 +10,8 @@ section {
   clear: both;
 }
 
-.large-col {
-  @include span-columns(8 of 12);
-}
-
-.small-col {
-  @include span-columns(4 of 12);
-}
-
 ul.posts {
   li.post {
-    border-bottom: 1px dotted $light-gray;
     padding: 2em 0;
 
     &:last-of-type {
@@ -36,17 +27,9 @@ ul.posts {
 
 ol {
   li {
+    display: inline-block;
     font-size: .9em;
     font-weight: 500;
     margin: .4em 0;
-
-    h5 {
-      display: inline-block;
-
-      &:before {
-        content: '/';
-        margin: 0 .3em;
-      }
-    }
   }
 }

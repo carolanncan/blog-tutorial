@@ -9,6 +9,6 @@
         - locations.each do |location, articles|
           %li
             = link_to location, tag_path(location)
-        %li
-          = link_to "My Type", "/index.html", :class => "blog-title"
+        %li.blog-title
+          = link_to "My Type", "/index.html"
   .js-menu-screen.menu-screen

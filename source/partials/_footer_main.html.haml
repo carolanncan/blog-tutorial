@@ -6,5 +6,5 @@
     %li
       %ol
         - blog.tags.each do |tag, articles|
-          %li
-            = link_to "#{tag}", tag_path(tag)
+          = link_to tag_path(tag), class: 'li.main' do
+            %li.main #{tag}
