@@ -39,7 +39,7 @@ button.js-menu-trigger {
   @include size(100% auto);
   @include transform(translateY(-180px));
   @include transition(all .3s linear);
-  background: $light-green;
+  background: $mint-green;
   z-index: 7;
 
   li {
