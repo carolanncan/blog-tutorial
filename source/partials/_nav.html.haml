@@ -8,7 +8,7 @@
       %ol
         - locations.each do |location, articles|
           %li
-            = link_to location, tag_path(location)
+            = link_to location, location_path(location)
         %li.blog-title
           = link_to "My Type", "/index.html"
   .js-menu-screen.menu-screen

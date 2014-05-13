@@ -30,14 +30,41 @@ li.main {
 footer.posts {
   ul {
     margin-top: .5em;
-    line-height: 10;
+
+    li {
+      &:hover {
+        h1 {
+          &:after {
+            @include transform(translateX(9px));
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
   }
 
   h1 {
+    display: inline-block;
     font-size: 1.3em;
+    line-height: 2;
+    position: relative;
+
+    &:after {
+      @include transition(all .3s linear);
+      content: '\f105';
+      display: inline-block;
+      font-family: $icon;
+      font-weight: 300;
+      opacity: 0;
+      position: relative;
+      visibility: hidden;
+    }
   }
 
   h2 {
+    color: $medium-gray;
     font-size: 1em;
+    font-weight: 300;
   }
 }
