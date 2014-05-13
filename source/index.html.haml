@@ -13,6 +13,12 @@ per_page: 10
   - if prev_page
     %p= link_to 'Previous page', prev_page
 
+.collage.effect-parent
+  %img{:src => "images/capitol-type/yolo.jpg"}
+  %img{:src => "images/otto.jpg"}
+  %img{:src => "images/silence.jpg"}
+  %img{:src => "images/otto.jpg"}
+
 %ul.posts
   - blog.articles[0...4].each do |article|
     %li.post

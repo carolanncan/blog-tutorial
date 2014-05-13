@@ -9,8 +9,8 @@ tags: signage, serif
 ---
 
 ![papers][papers]
-I found this in East Bay on my walk home from the BART Ashby station.
 
-It's the letter-drop on the door of an apartment building.
+I found this carved serif on the letter-drop of the door of an apartment
+building. Beautiful letters and a nice texture. East Bay is a nice place.
 
 [papers]:images/papers.jpg
