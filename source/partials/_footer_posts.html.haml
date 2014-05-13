@@ -7,13 +7,14 @@
   %ul
     %li
       - if prev_article
-        %a{ :rel => "prev", :href => prev_article.url }
+        = link_to prev_article.url do
           %h1
             = prev_article.title
           %h2
             = prev_article.data.subtitle
+
       - else next_article
-        %a{ :rel => "next", :href => next_article.url }
+        = link_to next_article.url do
           %h1
             = next_article.title
           %h2

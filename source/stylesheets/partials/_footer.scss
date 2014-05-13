@@ -7,10 +7,9 @@ footer {
   text-align: center;
 
   .heading {
-    font-size: .9em;
+    font-size: .8em;
     font-weight: 700;
     letter-spacing: 2px;
-    margin-bottom: 1em;
     text-transform: uppercase;
   }
 }
@@ -30,8 +29,15 @@ li.main {
 
 footer.posts {
   ul {
-    li {
-      font-size: .5em;
-    }
+    margin-top: .5em;
+    line-height: 10;
+  }
+
+  h1 {
+    font-size: 1.3em;
+  }
+
+  h2 {
+    font-size: 1em;
   }
 }

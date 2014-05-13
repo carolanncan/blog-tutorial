@@ -81,6 +81,8 @@ GEM
       tilt (~> 1.4.1, < 2.0)
     middleman-gh-pages (0.0.3)
       rake (> 0.9.3)
+    middleman-google-analytics (0.1.1)
+      middleman-core (>= 3.0.6)
     middleman-livereload (3.1.1)
       em-websocket (>= 0.2.0)
       middleman-core (>= 3.0.2)
@@ -149,6 +151,7 @@ DEPENDENCIES
   middleman (~> 3.3.2)
   middleman-blog (~> 3.5.2)
   middleman-gh-pages
+  middleman-google-analytics
   middleman-livereload (~> 3.1.0)
   neat
   nokogiri

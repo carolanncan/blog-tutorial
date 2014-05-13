@@ -1,5 +1,5 @@
 $sliding-menu-border-color: $black;
-$sliding-menu-background: $light-yellow;
+$sliding-menu-background: $light-blue;
 
 nav {
   margin-bottom: 7em;
@@ -55,8 +55,6 @@ button.js-menu-trigger {
     }
 
     &:hover {
-      background: lighten($light-yellow, 7);
-
       a {
         @include transition(all .4s linear);
         border-color: $black;
