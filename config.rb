@@ -10,21 +10,19 @@ activate :blog do |blog|
   # blog.location = "location/{location}.html"
   blog.layout = "main"
   blog.summary_separator = /(READMORE)/
-  blog.summary_length = 150
+    blog.summary_length = 150
   blog.custom_collections = {
     location: {
-      link: 'locations/{location}.html',
-      template: 'location.html'
+    link: 'locations/{location}.html',
+    template: 'location.html'
     }
   }
-  # blog.year_link = "{year}.html"
-  # blog.month_link = "{year}/{month}.html"
-  # blog.day_link = "{year}/{month}/{day}.html"
-  # blog.default_extension = ".markdown"
+
+  activate :google_analytics do |ga|
+      ga.tracking_id = 'UA-XXXXXXX-X' # Replace with your property ID.
+  end
 
   blog.tag_template = "tag.html"
-  # blog.location_template = "location.html"
-  #blog.calendar_template = "calendar.html"
 
   # Enable pagination
   blog.paginate = true
