@@ -41,6 +41,7 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :relative_links, true
+set :build_dir, 'tmp'
 
 # Build-specific configuration
 configure :build do
